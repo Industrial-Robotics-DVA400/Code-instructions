@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{readme Industrial Robotics Project}
+\author{Carl Larsson, Pontus Svensson}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Initialization}
+The following steps need to be executed to initialize in preperation of simulation:
+\begin{itemize}
+    \item Open file "IDC\_OS.m"
+    \item Execute sections:
+    \begin{itemize}
+        \item Clean up
+        \item Define robot
+        \item Matrices
+        \item Define positions (via points)
+    \end{itemize}
+\end{itemize}
+
+\section{Simulink Simulation}
+To run the simulink simulation of the Inverse dynamics controller, do one of the following:
+\begin{itemize}
+    \item Main approach: open file "IDC\_OS.slx" and execute simulation through simulink by pressing "Simulate model" (ctrl+T)
+    \item Alternative approach: run section "Perform simulation in simulink" in the "IDC\_OS.m" file
+\end{itemize}
+
+\section{Visualize Output}
+To visualize the system output and motion, execute the following sections in the file "IDC\_OS.m":
+\begin{itemize}
+    \item Create figure 
+    \begin{itemize}
+        \item Only needs to be executed one time in the beginning
+    \end{itemize}
+    \item Draw/redraw
+    \begin{itemize}
+        \item Execute this section to visualize the motion
+        \item Execute this section again to redo the visualization
+    \end{itemize}
+\end{itemize}
+
+\end{document}
